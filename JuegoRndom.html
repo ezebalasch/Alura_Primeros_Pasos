@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<h1>Juego de Número Aleatorio</h1>
+<input type="text" name="casillero">
+<button>Enviar</button>
+
+<script type="text/javascript">
+	var randomNumber = Math.round(Math.random()*10);
+	var casillero = document.querySelector("input");
+	var boton = document.querySelector("button");
+	casillero.focus();
+
+	function saltarLinea(){
+		document.write("<br>");
+	}
+
+	function sout(leer){
+		document.write(leer);
+		saltarLinea();
+	}
+
+	function validar(){
+		if (parseInt(casillero.value)==randomNumber) {
+			alert("Número Acertado el número es "+ randomNumber);
+		}
+		else{
+			alert("Número Incorrecto ");
+		}
+		input.value("");
+		input.focus;
+	}
+
+
+	}
+	
+	boton.onclick = validar;
+
+
+
+</script>
